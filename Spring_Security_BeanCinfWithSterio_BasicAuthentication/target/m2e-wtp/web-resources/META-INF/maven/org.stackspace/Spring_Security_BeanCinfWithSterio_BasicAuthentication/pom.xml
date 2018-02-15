@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.stackspace</groupId>
-  <artifactId>Spring_Security_BeanCinfWithSterio_FormBasedAuthentication</artifactId>
+  <artifactId>Spring_Security_BeanCinfWithSterio_BasicAuthentication</artifactId>
   <packaging>war</packaging>
   <version>1.0-RELEASE</version>
-  <name>Spring_Security_BeanCinfWithSterio_FormBasedAuthentication Maven Webapp</name>
+  <name>Spring_Security_BeanCinfWithSterio_BasicAuthentication Maven Webapp</name>
   <url>http://maven.apache.org</url>
   	<dependencies>
 		<dependency>
@@ -49,16 +49,19 @@
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>${springsecurity.version}</version>
 		</dependency>
-
 		<dependency>
-		    <groupId>javax.servlet</groupId>
-		    <artifactId>jstl</artifactId>
-		    <version>1.2</version>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>jstl-api</artifactId>
+			<version>1.2</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jstl-impl</artifactId>
+			<version>1.2</version>
+		</dependency>
 	</dependencies>
 	<build>
-		<finalName>Spring_Security_BeanCinfWithSterio_FormBasedAuthentication</finalName>
+		 <finalName>Spring_Security_BeanCinfWithSterio_BasicAuthentication</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
